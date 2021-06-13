@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML tables</title>
+    <style>
+      th,
+      td {
+        background: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Tables</h1>
+    <table border="20" bgcolor="pink">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Noman</td>
+        <td>19</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Zain</td>
+        <td>19</td>
+        <td>220</td>
+      </tr>
+    </table>
+
+    <h1>Long table example</h1>
+    <table width="200" cellpadding="10" cellspacing="80">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Noman</td>
+          <td rowspan="2">19</td>
+          <td>200</td>
+        </tr>
+        <tr>
+          <td>Zain</td>
+          <td>220</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>420</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h1>Rowspan example</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Noman</td>
+        <td rowspan="2">19</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Zain</td>
+        <td>220</td>
+      </tr>
+    </table>
+
+    <h1>Colspan example</h1>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>Noman</td>
+        <td>19</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Zain</td>
+        <td colspan="2">19</td>
+      </tr>
+    </table>
+
+    <h1>Th example</h1>
+    <table>
+      <tr>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+      </tr>
+      <tr>
+        <th>Kitna bika</th>
+        <td>200</td>
+        <td>300</td>
+      </tr>
+      <tr>
+        <th>Kitna maal aaya</th>
+        <td>300</td>
+        <td>400</td>
+      </tr>
+    </table>
+  </body>
+</html>
