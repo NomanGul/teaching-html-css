@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Forms</title>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+
+    <form>
+      <fieldset>
+        <legend>Login details</legend>
+        <label>
+          Name:
+          <input type="text" name="username" maxlength="10" />
+        </label>
+
+        <br />
+
+        <label>
+          Password:
+          <input type="password" name="password" maxlength="10" required />
+        </label>
+
+        <br />
+
+        <label>
+          Textarea:
+          <textarea name="comments" rows="6" cols="40">
+Enter your comments:</textarea
+          >
+        </label>
+      </fieldset>
+
+      <label>Type Email:
+        <input type="email" name="email" required />
+      </label>
+
+      <br />
+
+      <label>Select Date:
+        <input type="date" name="date" />
+      </label>
+
+      <p>
+        Please select anyone favorite sport:
+        <br />
+        <input type="radio" name="sport" value="cricket" />
+        Cricket
+        <input type="radio" name="sport" value="hockey" checked="checked" />
+        Hockey
+        <input type="radio" name="sport" value="football" />
+        Football
+      </p>
+
+      <p>
+        Please select all favorite foods:
+        <br />
+        <input type="checkbox" name="foods" value="biryani" checked="checked" />
+        Biryani 🐦
+        <input type="checkbox" name="foods" value="burger" />
+        Burger 🍔
+        <input type="checkbox" name="foods" value="qorma" />
+        Qorma 🥗
+      </p>
+
+      <p>
+        Please select your gender:
+        <br />
+        <select name="gender">
+          <option value="male">Male</option>
+          <option value="female" selected="selected">Female</option>
+        </select>
+      </p>
+
+      <p>
+        [MULTIPLE] Please select your gender:
+        <br />
+        <select name="gender" multiple="multiple">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </p>
+
+      <p>
+        Please select file:
+        <br />
+        <input type="file" name="file" />
+      </p>
+
+      <input type="submit" name="submit" value="Submit" />
+
+      <br />
+
+      <input
+        type="image"
+        src="https://www.pngitem.com/pimgs/m/208-2086994_green-submit-button-png-submit-button-png-green.png"
+        width="400"
+      />
+
+      <br />
+
+      <button>Han bhai me butoon hu 😀</button>
+    </form>
+  </body>
+</html>
